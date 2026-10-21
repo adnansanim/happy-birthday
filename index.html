@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050a1f"><title>BRO.exe — DBC Birthday Surprise</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="balloons" aria-hidden="true"><i class="balloon" style="--l:6%;--d:0s;--bc:#ff4fa0"></i><i class="balloon" style="--l:24%;--d:4s;--bc:#35d0ff"></i><i class="balloon" style="--l:48%;--d:8s;--bc:#8b5cf6"></i><i class="balloon" style="--l:70%;--d:2s;--bc:#ffd23f"></i><i class="balloon" style="--l:90%;--d:6s;--bc:#2f7bff"></i></div>
+<div class="motes" aria-hidden="true"><i class="mote" style="--l:44%;--d:-2s;--s:6px"></i><i class="mote" style="--l:86%;--d:-0s;--s:3px"></i><i class="mote" style="--l:71%;--d:-1s;--s:5px"></i><i class="mote" style="--l:77%;--d:-0s;--s:7px"></i><i class="mote" style="--l:30%;--d:-0s;--s:3px"></i><i class="mote" style="--l:58%;--d:-6s;--s:3px"></i><i class="mote" style="--l:33%;--d:-1s;--s:7px"></i><i class="mote" style="--l:57%;--d:-0s;--s:7px"></i><i class="mote" style="--l:18%;--d:-3s;--s:7px"></i><i class="mote" style="--l:10%;--d:-9s;--s:7px"></i><i class="mote" style="--l:53%;--d:-0s;--s:4px"></i><i class="mote" style="--l:8%;--d:-8s;--s:4px"></i><i class="mote" style="--l:40%;--d:-6s;--s:4px"></i><i class="mote" style="--l:72%;--d:-1s;--s:7px"></i></div>
+<button id="music" class="btn mini" aria-pressed="false">🎵 Music: off</button>
+<main>
+<section id="s1" class="scene" aria-label="System boot">
+ <div class="term glass"><div class="tbar"><i></i><i></i><i></i> BRO.exe</div><pre id="term" aria-live="polite"></pre><div class="prog"><b id="pb"></b></div></div>
+ <div id="reveal" class="hide"><h1 id="r1"></h1><p id="r2"></p><button class="btn" id="start" data-go="2">▶ START THE SURPRISE</button></div>
+</section>
+<section id="s2" class="scene" aria-label="Profile"><h2>Player Profile</h2><div class="card glass" id="card"></div><button class="btn" data-go="3">NEXT ▶</button></section>
+<section id="s3" class="scene" aria-label="Friendship mini-game"><h2>Friendship Mini-Game</h2><div class="glass quiz" id="quiz"></div></section>
+<section id="s4" class="scene" aria-label="Achievements"><h2>Achievement Unlocked</h2><div class="ach" id="ach"></div><button class="btn" data-go="5">NEXT ▶</button></section>
+<section id="s5" class="scene" aria-label="Birthday cake"><h2>Birthday Cake</h2>
+ <div class="cake" id="cake"><div class="candles" id="candles"><div class="candle"><i class="flame"></i></div><div class="candle"><i class="flame"></i></div><div class="candle"><i class="flame"></i></div></div><div class="ly l3"></div><div class="ly l2"></div><div class="ly l1"></div></div>
+ <h2 class="hb">HAPPY BIRTHDAY, DBC! 🎂</h2><p id="cmsg" aria-live="polite"></p>
+ <div class="row"><button class="btn" id="light">🕯️ LIGHT THE CANDLES</button><button class="btn" id="wish">🌠 MAKE A WISH</button><button class="btn" id="blow">💨 BLOW OUT THE CANDLES</button></div>
+ <div class="row"><button class="btn alt" data-go="6">NEXT ▶</button></div></section>
+<section id="s6" class="scene" lang="bn" aria-label="হোস্টেলের দিনগুলো"><h2 id="hTitle" class="htitle"></h2><div id="hProg" class="hp" aria-hidden="true"></div><div id="hLine" class="hl" aria-live="polite"></div><h1 id="hEnd" class="hide"></h1><div class="hctl"><button class="btn big" id="hNextLine"></button><button class="btn big hide" id="hBtn" data-go="7"></button></div></section>
+<section id="s7" class="scene" lang="bn" aria-label="চিঠি"><h2 id="intro" class="intro" aria-live="polite"></h2><div id="letter" class="glass letter hide" title="Click to skip typing"></div><div class="row hide" id="lnext"><button class="btn" data-go="8">NEXT ▶</button></div></section>
+<section id="s8" class="scene" aria-label="Final scene"><h2 id="gTitle"></h2><p id="gTap" class="hint"></p>
+ <button class="gift" id="gift" aria-label="Open the gift"><i class="beam"></i><i class="gb"></i><i class="gl"></i></button>
+ <div id="gLine" class="hl hide" aria-live="polite"></div>
+ <div id="gFin" class="hide"><h1 id="gF1"></h1><p id="gF2" class="gclose"></p><p id="gSig" class="sig"></p><div class="row"><button class="btn" id="relive"></button></div></div></section>
+</main>
+<nav id="dots" aria-label="Scenes"></nav>
+<script src="script.js"></script>
+</body></html>
