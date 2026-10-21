@@ -54,11 +54,6 @@ const CFG={
   tapText:"Tap the text to continue",
   lines:[
    "Happy Birthday, DBC. 💙",
-   "Who knew those ordinary hostel days would become such special memories?",
-   "Back then, we could laugh about the smallest things, spend time together without planning, and turn ordinary days into unforgettable moments.",
-   "Now we’re far apart, living our own lives. Sometimes, I really wish we could go back to those days, even just for a little while.",
-   "I miss those days, bro. I miss the laughter, the random nonsense, and simply having you around.",
-   "We might not be together like before, but distance doesn’t erase the memories we’ve made or the friendship we share.",
    "I hope this birthday brings you happiness, success, good health, and many beautiful moments ahead.",
    "And someday, I hope we’ll sit together again, talk about old times, laugh at the same stupid jokes, and create new memories just like we used to."],
   final:"DISTANCE CHANGED OUR DAYS, NOT OUR MEMORIES. 💙",
